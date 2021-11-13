@@ -1,54 +1,60 @@
-*{
+.container {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-   
-    
-}
+    background-color:gray
+   }
 nav {
+    color:darkblue;
+    background-color: gainsboro;
+    margin: 1px;
+    padding: 2px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: white;
-}
-.navbar{
     
-   
-   
 }
-.nav-list{
+.logo {
+display: flex;
+justify-content: flex-start;
+flex-basis: 30%;
+ alt: "";
+}
+ul {
     list-style-type: none;
 }
-.nav-list .list-item{
-    display: inline-block;
-    padding: 20px 10px ;
-    background-color: white;
-    color: #333399;
-}
-.navbar a{
+ .list-item{
+    display:inline-block;
+    padding: 2px 5px ;
+    
+ }
+.list-item a{
     text-decoration: none;
 }
-.navbar a:hover{
+.list-item a:hover{
     color: darkgoldenrod;
 }
-#header-style{
-    height: 400px;
+.section-header{
+    
     background-color: linear-gradient(to bottom, #333399 -28%, #ffffff 125%);
-    width: 100%;
+   width: 100%;
     margin: 10px;
     color: darkslateblue;
     font-size: 15px;
-    display:flexbox;
+    display:flex;
+    justify-content: space-around;
+    flex-direction:row ;
+    
 
 }
-.flex-container {
+.section-text {
     display: flex;
-    background-color:linear-gradient(to bottom, #333399 -28%, #ffffff 125%) ,gainsboro;
+    flex-basis: 33%;
+   justify-content: center;
     margin: 10px;
   }
   
-  .flex-container > div(1) {
-   
+  .section-image {
+      display: flex;
+    flex-basis: 33%;
     color:darkslateblue;
     width: 100px;
     margin: 10;
@@ -56,17 +62,7 @@ nav {
     font-size: 15px;
     position: absolute;
   }
-  .flex-container > div(2) {
-   
-    color:darkslateblue;
-    width: 100px;
-    margin: 10;
-    text-align: center;
-    font-size: 15px;
-    position: relative;
-    left: 50%;
-  }
-  button{
+     button{
     border: none;
     background-color: gold;
     padding: 4px;
@@ -148,11 +144,12 @@ input[type=text], textarea ,[type=email] {
     text-align: center;
     width: 100%;
   }
-  .container {
+  .containerr {
     margin: 2px;
     background-color: darkblue;
     padding: 20px;
     display: inline-block;
+    align-content: space-around;
   }
   
   .col-49 {
@@ -172,6 +169,7 @@ input[type=text], textarea ,[type=email] {
     margin-top: 3px;
     text-align: left;
     padding: 10px;
+    align-content: space-around;
   }
   .row1:after {
     content: "";
