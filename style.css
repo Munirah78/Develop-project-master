@@ -2,14 +2,16 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    background-color:gray
+   background-color:gray;
    }
 nav {
     color:darkblue;
     background-color: gainsboro;
+    box-shadow:0px 1px 0px #616060 ;
     margin: 1px;
     padding: 2px;
     display: flex;
+    justify-content: space-around;
     
 }
 .logo {
@@ -46,8 +48,6 @@ ul {
     justify-content: center;
     flex-direction:row ;
     gap: 10%;
-    
-
 }
 .section-text {
     display: flex;
@@ -57,16 +57,17 @@ ul {
    justify-content:flex-start;
     margin: 10px;
     position: relative;
+    align-items: stretch;
   }
   .text-p1{
-      color: darkblue;
+      color: white;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      font-size: 15px;
+      font-size: 20px;
   }
-  .text-p1{
-    color: darkblue;
+  .text-p2{
+    color: white;
     font-family:Verdana, Geneva, Tahoma, sans-serif
-    font-size: 10px;
+    font-size: 15px;
 }
   .section-image {
       display: flex;
@@ -75,7 +76,6 @@ ul {
     color:darkslateblue;
     width: 100px;
     margin: 10;
-    text-align: center;
     font-size: 15px;
     position: relative;
   }
@@ -87,27 +87,26 @@ ul {
     color:lightseagreen;
     cursor: pointer;
     width: 70px;
-    border-radius: 20%;
+    border-radius: 10%;
     font-size: 15px;
     text-align: center;
 }
-  .p3{
+.features {
+    background-color: thistle;
+    
+    align-items: stretch;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+  .services{
       color: lightseagreen;
       background-color: white;
       font-size: 30px;
       text-align: center;
   }
-  .raw
-{
-    background-color: thistle;
-    margin-top: 6px;
-    align-items: center;
-    display: flexbox;
-    justify-content: space-between;
-    padding: 20px;
-    margin: 2px;
-}
-.card {
+ .card {
     box-shadow: 1px 3px 1px #616060;
     max-width: 500px;
   margin: auto;
@@ -115,23 +114,11 @@ ul {
     text-align: center;
     padding-bottom: 20px;
 }
-.raw::after{
-content:"" ;
-display: table;
-clear: both;
-}
+
 @media screen and (max-width:480px) {
-    column{
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-    } 
+  
 }
-.column{
-width: 25%;
-float: left;
-padding: 0px 10px;
-}
+
 .card-img{
     background-color: gold;
     width: 30px;
